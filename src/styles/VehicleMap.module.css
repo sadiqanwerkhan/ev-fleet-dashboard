@@ -1,0 +1,108 @@
+/* VehicleMap Component Styles */
+.container {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden;
+}
+
+.header {
+  @apply p-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.title {
+  @apply text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2;
+}
+
+.legend {
+  @apply flex items-center gap-4;
+}
+
+.legendItem {
+  @apply flex items-center gap-1;
+}
+
+.legendDot {
+  @apply w-3 h-3 rounded-full;
+}
+
+.legendDotActive {
+  @apply bg-green-500;
+}
+
+.legendDotMaintenance {
+  @apply bg-yellow-500;
+}
+
+.legendDotInactive {
+  @apply bg-gray-500;
+}
+
+.legendText {
+  @apply text-sm text-gray-600 dark:text-gray-300;
+}
+
+.mapContainer {
+  @apply h-[500px] w-full;
+}
+
+.customMarker {
+  @apply w-3 h-3 rounded-full border-2 border-white shadow-lg;
+}
+
+.markerActive {
+  @apply bg-green-500;
+}
+
+.markerMaintenance {
+  @apply bg-yellow-500;
+}
+
+.markerInactive {
+  @apply bg-gray-500;
+}
+
+.popup {
+  @apply p-4 min-w-64;
+}
+
+.popupTitle {
+  @apply text-lg font-bold text-gray-900 mb-1;
+}
+
+.popupModel {
+  @apply text-sm text-gray-600 mb-2;
+}
+
+.popupId {
+  @apply text-xs text-gray-500 mb-3;
+}
+
+.popupGrid {
+  @apply grid grid-cols-2 gap-3 mb-3;
+}
+
+.popupMetric {
+  @apply text-sm;
+}
+
+.popupLabel {
+  @apply text-gray-500;
+}
+
+.popupValue {
+  @apply block text-gray-900;
+}
+
+.popupValueActive {
+  @apply text-green-600;
+}
+
+.popupValueMaintenance {
+  @apply text-yellow-600;
+}
+
+.popupValueInactive {
+  @apply text-gray-600;
+}
+
+.popupFooter {
+  @apply text-xs text-gray-400 border-t pt-2;
+}

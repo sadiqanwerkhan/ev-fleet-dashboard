@@ -1,0 +1,80 @@
+/* EnhancedFleetOverview Component Styles */
+.container {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden;
+}
+
+.header {
+  @apply p-6 border-b border-gray-200 dark:border-gray-700;
+}
+
+.title {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2;
+}
+
+.metricsGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6;
+}
+
+.metricCard {
+  @apply bg-gray-50 dark:bg-gray-700 p-4 rounded-lg cursor-move transition-all duration-200 hover:shadow-md;
+}
+
+.metricCard.dragging {
+  @apply opacity-50 transform rotate-2 scale-105;
+}
+
+.metricIcon {
+  @apply w-10 h-10 rounded-full flex items-center justify-center mb-2;
+}
+
+.metricIconActive {
+  @apply bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400;
+}
+
+.metricIconMaintenance {
+  @apply bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400;
+}
+
+.metricIconInactive {
+  @apply bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300;
+}
+
+.metricIconTotal {
+  @apply bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400;
+}
+
+.metricValue {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.metricLabel {
+  @apply text-sm text-gray-600 dark:text-gray-300;
+}
+
+.chartsSection {
+  @apply p-6;
+}
+
+.chartsTitle {
+  @apply text-lg font-semibold text-gray-900 dark:text-white mb-4;
+}
+
+.chartsGrid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}
+
+.chartCard {
+  @apply bg-gray-50 dark:bg-gray-700 p-4 rounded-lg cursor-move transition-all duration-200 hover:shadow-md;
+}
+
+.chartCard.dragging {
+  @apply opacity-50 transform rotate-1 scale-105;
+}
+
+.chartTitle {
+  @apply text-sm font-medium text-gray-900 dark:text-white mb-3;
+}
+
+.chartContainer {
+  @apply h-48;
+}

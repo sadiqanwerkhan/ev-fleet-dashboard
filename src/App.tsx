@@ -1,9 +1,12 @@
-import React from 'react'
 import Dashboard from './components/Dashboard'
-import './App.css'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 function App() {
-  return <Dashboard />
+  return (
+    <ThemeProvider>
+      <Dashboard />
+    </ThemeProvider>
+  )
 }
 
 export default App

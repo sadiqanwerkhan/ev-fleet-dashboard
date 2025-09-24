@@ -1,0 +1,64 @@
+/* OptimizedDashboardLayout Component Styles */
+.container {
+  @apply min-h-screen bg-gray-50 dark:bg-gray-900;
+}
+
+.header {
+  @apply bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700;
+}
+
+.headerContent {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4;
+}
+
+.headerTop {
+  @apply flex items-center justify-between;
+}
+
+.headerLeft {
+  @apply flex items-center gap-4;
+}
+
+.logo {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.headerRight {
+  @apply flex items-center gap-4;
+}
+
+.main {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6;
+}
+
+.grid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-6;
+}
+
+.leftColumn {
+  @apply lg:col-span-2 space-y-6;
+}
+
+.rightColumn {
+  @apply space-y-6;
+}
+
+.section {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden;
+}
+
+.sectionHeader {
+  @apply p-6 border-b border-gray-200 dark:border-gray-700;
+}
+
+.sectionTitle {
+  @apply text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2;
+}
+
+.sectionContent {
+  @apply p-6;
+}
+
+.vehicleList {
+  @apply space-y-4 max-h-96 overflow-y-auto;
+}

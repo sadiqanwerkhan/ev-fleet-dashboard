@@ -1,0 +1,136 @@
+/* NotificationCenter Component Styles */
+.backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-40;
+}
+
+.panel {
+  @apply fixed right-0 top-0 h-full w-96 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300 ease-in-out translate-x-full z-50;
+}
+
+.panelOpen {
+  @apply translate-x-0;
+}
+
+.header {
+  @apply p-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.headerLeft {
+  @apply flex items-center gap-3;
+}
+
+.headerIcon {
+  @apply w-6 h-6 text-blue-600 dark:text-blue-400;
+}
+
+.headerTitle {
+  @apply text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.headerSubtitle {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.headerActions {
+  @apply flex items-center gap-2;
+}
+
+.actionButton {
+  @apply p-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200;
+}
+
+.closeButton {
+  @apply p-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200;
+}
+
+.alertList {
+  @apply flex-1 overflow-y-auto;
+}
+
+.emptyState {
+  @apply flex flex-col items-center justify-center h-64 text-center;
+}
+
+.emptyIcon {
+  @apply w-16 h-16 text-gray-300 dark:text-gray-600 mb-4;
+}
+
+.emptyTitle {
+  @apply text-lg font-medium text-gray-900 dark:text-white mb-2;
+}
+
+.emptyMessage {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.alertItem {
+  @apply p-4 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200;
+}
+
+.alertUnread {
+  @apply bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500;
+}
+
+.alertContent {
+  @apply space-y-2;
+}
+
+.alertHeader {
+  @apply flex items-start justify-between gap-2;
+}
+
+.alertIcons {
+  @apply flex items-center gap-2;
+}
+
+.typeIcon {
+  @apply w-4 h-4 text-gray-600 dark:text-gray-300;
+}
+
+.severityIcon {
+  @apply w-4 h-4;
+}
+
+.alertMeta {
+  @apply flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400;
+}
+
+.vehicleName {
+  @apply font-medium;
+}
+
+.timestamp {
+  @apply text-xs;
+}
+
+.alertBody {
+  @apply space-y-1;
+}
+
+.alertTitle {
+  @apply font-medium text-gray-900 dark:text-white;
+}
+
+.alertMessage {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.alertActions {
+  @apply flex items-center gap-2 mt-2;
+}
+
+.readButton {
+  @apply text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded hover:bg-blue-200 dark:hover:bg-blue-900/50 transition-colors duration-200;
+}
+
+.dismissButton {
+  @apply text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200;
+}
+
+.footer {
+  @apply p-4 border-t border-gray-200 dark:border-gray-700;
+}
+
+.clearButton {
+  @apply w-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 py-2 px-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 font-medium;
+}
